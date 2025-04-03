@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'gothic';
+    src: url('./Gothicha.ttf');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.title{
+    text-align: center;
+    padding: 12px 40px;
+}
+
+.title h1{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.title p{
+    font-size: 12px;
+    width: 650px;
+    color: gray;
+    font-family: gothic;
+}
+
+.carousel{
+    display: flex;
+    gap: 14px;
+    justify-items: center;
+    align-items: center;
+}
+
+.carousel img{
+    max-height: 400px;
+}
+
+.button{
+    background-color: chocolate;
+    border-radius: 100%;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 24px;
+
+    cursor: pointer;
+}

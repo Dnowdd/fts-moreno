@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Fotos Moreno</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var atual = 1;
+        var max = 6;
+
+        function next(){
+            if (atual >= max){
+                atual = 1;
+                document.getElementById("images").src = "images/"+atual+".png"
+                return;
+            }
+
+            atual += 1;
+
+            document.getElementById("images").src = "images/"+atual+".png"
+        }
+
+        function back(){
+            if (atual = 1){
+                atual = max;
+                document.getElementById("images").src = "images/"+atual+".png"
+                return;
+            }
+
+            atual = atual - 1;
+            document.getElementById("images").src = "images/"+atual+".png"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>TOP Fotos Moreno</h1>
+            <p>Seja muito bem-vindo ao site feito para os adoradores do moreno, aqui você encontrará as fotos mais quentes e provocadoras que poderia experenciar, uma viagem surrealista pelas curvas do nosso grande muso.</p>
+        </div>
+        <div class="carousel">
+            <div class="button" onclick="back()"><</div>
+            <img src="images/1.png" id="images">
+            <div class="button" onclick="next()">></div>
+        </div>
+    </div>
+</body>
+</html>
